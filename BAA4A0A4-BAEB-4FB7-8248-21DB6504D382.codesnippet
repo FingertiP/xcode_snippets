@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>getview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+ (&lt;#class#&gt;*)getView{
+    NSArray *xibs = [[NSBundle mainBundle] loadNibNamed:@"&lt;#class#&gt;" owner:self options:nil];
+    for(UIView *view in xibs){
+        if([view isKindOfClass:[&lt;#class#&gt; class]]){
+            return (&lt;#class#&gt;*)view;
+        }
+    }
+    return nil;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BAA4A0A4-BAEB-4FB7-8248-21DB6504D382</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Get instance by loading from xib</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Get View From Xib</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
