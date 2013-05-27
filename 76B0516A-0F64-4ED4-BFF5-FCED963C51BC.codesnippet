@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>imagecentralize</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>  /* Image centralize crop */
+NSString* &lt;#image url#&gt; = &lt;#url#&gt;
+&lt;#image instance#&gt;.contentMode = UIViewContentModeScaleAspectFill;
+  &lt;#image instance#&gt;.clipsToBounds = YES;
+[&lt;#image instance#&gt; setImageWithURL:[NSURL URLWithString:&lt;#image url#&gt;] placeholderImage:[UIImage imageNamed:@"&lt;#placeholder url#&gt;"]];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>76B0516A-0F64-4ED4-BFF5-FCED963C51BC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Center the image then crop</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Image Centralize Crop</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
