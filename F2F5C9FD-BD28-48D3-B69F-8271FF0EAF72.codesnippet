@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initwithframe</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (id)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
+    if (self) {
+        UIView *view = [[[NSBundle mainBundle]
+                         loadNibNamed:@"&lt;#xib name#&gt;" owner:self options:nil] objectAtIndex:0];
+        
+        /** Important. This is to make the view from the xib to resize properly to the frame */
+        view.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
+        
+        [self addSubview:view];
+    }
+    return self;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F2F5C9FD-BD28-48D3-B69F-8271FF0EAF72</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Init with frame</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Init with Frame</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
