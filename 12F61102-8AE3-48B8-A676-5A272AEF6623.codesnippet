@@ -12,7 +12,7 @@
 	<string>/*
  * Prepare for segue.
  */
--(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
   if ([segue.identifier isEqualToString:@"&lt;#segue name#&gt;"]){
       &lt;#target class#&gt; *&lt;#target name#&gt; = [segue destinationViewController];
   }

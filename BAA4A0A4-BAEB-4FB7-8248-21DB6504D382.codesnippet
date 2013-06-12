@@ -9,7 +9,7 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (&lt;#class#&gt;*)getView{
+	<string>+ (&lt;#class#&gt;*)getView {
     NSArray *xibs = [[NSBundle mainBundle] loadNibNamed:@"&lt;#class#&gt;" owner:self options:nil];
     for(UIView *view in xibs){
         if([view isKindOfClass:[&lt;#class#&gt; class]]){

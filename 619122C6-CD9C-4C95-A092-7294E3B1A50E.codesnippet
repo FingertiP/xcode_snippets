@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>/* Image circularize */
-- (void) circularizeImage{
+- (void) circularizeImage {
     CALayer *imageLayer = [&lt;#image#&gt; layer];
   [imageLayer setCornerRadius:60];
   [imageLayer setBorderWidth:0];
